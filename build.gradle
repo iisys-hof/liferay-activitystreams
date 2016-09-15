@@ -1,0 +1,42 @@
+buildscript {
+	repositories {
+		maven {
+			url "https://repository.liferay.com/nexus/content/groups/public/"
+		}
+		maven {
+			url "https://repository.liferay.com/nexus/content/groups/liferay-ce/"
+		}
+	}
+	dependencies {
+		classpath group: "com.liferay", name: "com.liferay.gradle.plugins", version: "latest.release"
+	}
+}
+
+apply plugin: "com.liferay.plugin"
+
+repositories {
+	maven {
+		url "https://repository.liferay.com/nexus/content/groups/public/"
+	}
+	maven {
+		url "https://repository.liferay.com/nexus/content/groups/liferay-ce/"
+	}
+}
+
+dependencies {
+	compile 'com.liferay.portal:com.liferay.portal.kernel:2.3.0'
+	compile 'org.json:json:20160212'
+	compile 'javax.servlet:javax.servlet-api:3.1.0'
+	compile 'com.liferay:com.liferay.wiki.api:2.0.1'
+	compile 'com.liferay:com.liferay.wiki.service:1.0.3'
+	compile 'com.liferay:com.liferay.journal.api:2.0.1'
+	compile 'com.liferay:com.liferay.journal.service:2.0.3'
+	compile 'com.liferay:com.liferay.bookmarks.api:2.0.0'
+	compile 'com.liferay:com.liferay.bookmarks.service:1.0.2'
+	compile 'com.liferay:com.liferay.microblogs.api:2.0.0'
+	compile 'com.liferay:com.liferay.microblogs.service:2.0.1'
+	compile 'org.osgi:org.osgi.compendium:5.0.0'
+}
+
+sourceCompatibility = 1.7
+version = '7.0.1-ga2'
