@@ -7,8 +7,9 @@ Installation:
 1. Project has to be placed in a folder called "ShindigExt-ext" in the "ext" folder of a Liferay SDK.
 2. Import in Liferay IDE using "Liferay project from existing source"
 3. Right click on project and execute Liferay - SDK - war
-4. Put generated war in Liferay's "deploy" folder
-5. Restart Liferay twice
+4. Put http://central.maven.org/maven2/org/json/json/20160212/json-20160212.jar in Liferay's "osgi/modules/" folder
+5. Put generated war in Liferay's "deploy" folder
+6. Restart Liferay twice
 
 Configuration File: /docroot/WEB-INF/liferay-plugin-package.properties
 
