@@ -6,8 +6,9 @@ Installation:
 
 1. Import in Liferay 7 IDE as a Liferay Module
 2. Build using Gradle
-3. Put generated jar (in build/libs) in Liferay's "deploy" folder
-4. (Restart Liferay)
+3. Put http://central.maven.org/maven2/org/json/json/20160212/json-20160212.jar in Liferay's "osgi/modules/" folder
+4. Put generated jar (in build/libs) in Liferay's "deploy" folder
+5. (Restart Liferay)
 
 Configuration File: /src/main/resources/shindig-activitystreams.properties
 
